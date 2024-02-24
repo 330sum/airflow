@@ -12,8 +12,8 @@ with DAG(
         task_id="t1_orange",
         bash_command="/opt/airflow/plugins/shell/select_fruit.sh ORANGE",
         # task를 실행하는 주체는 워커컨테이너임. 워커 컨테이너가 알 수 있도록 이렇게 작성
-        # chmod +x select_fruits.sh
-        # ./select_fruits.sh ORANGE
+        # chmod +x select_fruit.sh
+        # ./select_fruit.sh ORANGE
     )
 
     t2_avocado = BashOperator(
